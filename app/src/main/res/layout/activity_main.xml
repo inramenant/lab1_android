@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="111dp"
+        android:background="#673AB7">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="195dp"
+            android:layout_height="89dp"
+            android:background="#FFEB3B"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.446" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="InConstraintLayout!"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="412dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="172dp"
+        android:background="#FF9800">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="177dp"
+            android:layout_height="94dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:background="#4CAF50" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:text="InFrameLayout!"
+            android:textColor="#090909" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="416dp"
+        android:layout_height="219dp"
+        android:background="#00BCD4">
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="192dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginBottom="90dp"
+            android:background="#3F51B5" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/view3"
+            android:layout_alignBottom="@+id/view3"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="20dp"
+            android:text="InRelativeLayout!"
+            android:textColor="#040404" />
+
+    </RelativeLayout>
+</LinearLayout>
